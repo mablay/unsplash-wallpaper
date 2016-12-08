@@ -58,8 +58,6 @@ This will download 15 random images to the `images/wallpaper` folder.
 
 ## Next steps
 
-1. Setup your desktop to randomly display images in a folder as wallpapers. If your computer can't do this, buy a Mac.
-![Select the wallpaper folder in System Preferences - Desktop and Screen Saver](./doc/osx-display-settings.png "System Preferences - Desktop and Screen Saver")
-
-
+1. ![Select the wallpaper folder in System Preferences - Desktop and Screen Saver](./doc/osx-display-settings.png "System Preferences - Desktop and Screen Saver") 
+Setup your desktop to randomly display images in a folder as wallpapers. If your computer can't do this, buy a Mac.
 2. Configure a cron job to move old images to `images/archive` and execute the script every X minutes. (The API key will allow 50 executions per hour)
