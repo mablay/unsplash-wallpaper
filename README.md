@@ -10,10 +10,11 @@ You're going to need some Unsplash dev credentials.
 Yea, that's a hassle but since you already have uncountably many accounts
 at innumerable web services, one more won't hurt.
  
-1. Go to [https://unsplash.com/developers Unsplash] and register for a developer account
-2. Create an application [https://unsplash.com/oauth/applications here] (ignore the callbackUrl)
+1. Go to [Unsplash](https://unsplash.com/developers) and register for a developer account
+2. Create an application [here](https://unsplash.com/oauth/applications) (ignore the callbackUrl)
 3. Duplicate `config/unsplash_example.js` and rename it to `config/unsplash.js`
 3. An copy `Application ID` and `secret` into your `config/unsplash.js` which is gitignored.
+
  
     npm install
     
