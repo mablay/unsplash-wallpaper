@@ -1,0 +1,24 @@
+{
+  "name": "usplash-wallpaper",
+  "version": "1.0.0",
+  "description": "downloads images from https://unsplash.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "unsplash",
+    "photography",
+    "images",
+    "wallpaper"
+  ],
+  "author": "Marc Ablay",
+  "license": "MIT",
+  "dependencies": {
+    "app-config": "^1.0.0",
+    "node-fetch": "^1.6.3",
+    "queue": "^4.0.0",
+    "unsplash-js": "^4.3.1"
+  }
+}
