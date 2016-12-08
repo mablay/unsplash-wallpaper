@@ -6,8 +6,6 @@ var Path = require('path');
 var Queue = require('queue');
 var queue = Queue({concurrency: 1});
 var config = require('app-config');
-
-console.log('[MAIN] unsplash options %s', JSON.stringify(config.unsplash, null, 4));
 const unsplash = new Unsplash.default(config.unsplash);
 
 const PATH_WALLPAPER = Path.join('images', 'wallpaper');
@@ -15,7 +13,7 @@ const PATH_ARCHIVE= Path.join('images', 'archive');
 
 
 var consumePhotoList = (photos => {
-  console.log('[consumePhotoList] Processing %s', JSON.stringify(photos, null, 4));
+  console.log('[consumePhotoList] Processing %d photos', photos.length);
 
   // Build the queue (download one image at a time)
   photos.forEach(photo => {
@@ -65,4 +63,4 @@ var downloadRandomPhotos = () => {
 
 
 //downloadCuratedPhotos();
-//downloadRandomPhotos();
+downloadRandomPhotos();
