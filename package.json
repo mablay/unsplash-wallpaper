@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "node scripts/pre-install.js",
+    "postinstall": "node scripts/post-install.js"
   },
   "keywords": [
     "unsplash",
@@ -19,6 +21,10 @@
     "app-config": "^1.0.0",
     "node-fetch": "^1.6.3",
     "queue": "^4.0.0",
-    "unsplash-js": "^4.3.1"
+    "unsplash-js": "4.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pisquared/unsplash-wallpaper.git"
   }
 }

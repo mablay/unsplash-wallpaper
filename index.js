@@ -8,8 +8,8 @@ var queue = Queue({concurrency: 1});
 var config = require('app-config');
 const unsplash = new Unsplash.default(config.unsplash);
 
-const PATH_WALLPAPER = Path.join('images', 'wallpaper');
-const PATH_ARCHIVE= Path.join('images', 'archive');
+const PATH_WALLPAPER = Path.join(__dirname, 'images', 'wallpaper');
+const PATH_ARCHIVE= Path.join(__dirname, 'images', 'archive');
 
 
 var consumePhotoList = (photos => {
