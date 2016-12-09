@@ -1,4 +1,4 @@
-# Unsplash Wallpaper downloader
+# Unsplash Wallpaper Downloader
 
 This script will download random images from unsplash.com 
 and store them in a local folder, so that they can be displayed as wallpapers.
