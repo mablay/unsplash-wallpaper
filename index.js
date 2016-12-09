@@ -55,7 +55,11 @@ var downloadCuratedPhotos = () => {
 
 var downloadRandomPhotos = () => {
   unsplash.photos
-    .getRandomPhoto({featured: true, orientation:'landscape', count: 15})
+    .getRandomPhoto({
+      featured: true,
+      orientation:'landscape',
+      count: 15
+    })
     .then(Unsplash.toJson)
     .then(consumePhotoList)
 };
